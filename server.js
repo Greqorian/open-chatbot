@@ -7,7 +7,6 @@ const app = express();
 const port = process.env.PORT || 3005;
 
 const apiKey = process.env.VITE_OPEN_AI_KEY;
-// Initialise OpenAI API
 const openai = new OpenAI({ apiKey: apiKey });
 
 app.use(cors());
